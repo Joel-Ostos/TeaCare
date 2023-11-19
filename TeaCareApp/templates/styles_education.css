@@ -1,0 +1,96 @@
+html, body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    background-color: #FEFFEC;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.header-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #F68476;
+    border-radius: 25px;
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.header-link:hover {
+    background-color: #e1e1e1;
+}
+
+.site-header {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.info-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+    background: #f4f4f4;
+    margin: 20px 0;
+    margin-left: 100px;
+    margin-right: 100px;
+    border: 2px solid #0C5261;
+}
+
+.info-section.reversed {
+    flex-direction: row-reverse;
+}
+
+.info-content {
+    flex: 1;
+    padding: 0 20px;
+    margin-right: 50px;
+}
+
+.info-image {
+    flex: 1;
+    margin-left: auto; /* Centra la imagen dentro de su contenedor flex */
+    margin-right: auto; /* Centra la imagen dentro de su contenedor flex */
+}
+
+.info-section:first-child .info-image {
+    margin-right: 0;
+    margin-left: 20%; /* Ajusta el porcentaje según sea necesario para mover la imagen hacia la derecha */
+}
+
+/* Aplica estilos específicos para la segunda imagen para centrarla en su espacio */
+.info-section:nth-child(2) .info-image {
+    margin-left: 20%; /* Ajusta el porcentaje según sea necesario para mover la imagen hacia la derecha */
+}
+
+.info-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+footer {
+    background: #0C5261;
+    color: #0C5261;
+    text-align: center;
+    padding: 10px 0;
+    height: 50px;
+}
+

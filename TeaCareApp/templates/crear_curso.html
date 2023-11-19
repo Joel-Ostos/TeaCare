@@ -1,0 +1,18 @@
+<!-- En tu archivo crear_curso.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Crear Curso</title>
+</head>
+<body>
+    <h2>Crear un Nuevo Curso</h2>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Crear Curso</button>
+    </form>
+</body>
+</html>
+

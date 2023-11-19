@@ -1,0 +1,80 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #FEFFEC;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.site-header {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.header-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #F68476;
+    border-radius: 25px;
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.header-link:hover {
+    background-color: #e1e1e1;
+}
+
+.about-section, .team-section {
+    margin: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+}
+
+.team-members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.member {
+    margin: 10px;
+    text-align: center;
+}
+
+.member-photo {
+    border-radius: 50%;
+    width:	   150px;
+    height:        150px;
+    object-fit:    cover;
+    border:        3px solid #eee;
+    margin-bottom: 10px;
+}
+
+.content-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-content, .carousel-wrapper {
+  width: 50%;
+  padding: 20px;
+}
+

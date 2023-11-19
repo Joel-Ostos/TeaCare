@@ -1,0 +1,45 @@
+{% extends "base.html" %}  <!-- Asegúrate de extender tu base de template si tienes uno -->
+
+{% block content %}
+<div class="container">
+    <h2>Perfil del Usuario</h2>
+    <div class="card">
+        <div class="card-body">
+            <h3>Información Personal</h3>
+            <p><strong>Nombre:</strong> {{ estudiante.nombre }}</p>
+            <p><strong>Apellido:</strong> {{ estudiante.apellido }}</p>
+            <p><strong>Correo:</strong> {{ estudiante.email }}</p>
+            <p><strong>Teléfono:</strong> {{ estudiante.telefono }}</p>
+        </div>
+    </div>
+
+    <div class="card mt-3">
+        <div class="card-body">
+            <h3>Colegio</h3>
+            <p><strong>Nombre del Colegio:</strong> {{ estudiante.curso.colegio.nombre }}</p>
+            <p><strong>Código del Colegio:</strong> {{ estudiante.curso.colegio.codigo }}</p>
+        </div>
+    </div>
+
+    <div class="card mt-3">
+        <div class="card-body">
+            <h3>Curso</h3>
+            <p><strong>Nombre del Curso:</strong> {{ curso.nombre }}</p>
+        </div>
+    </div>
+
+    <div class="card mt-3">
+        <div class="card-body">
+            <h3>Materias Inscritas</h3>
+            <ul>
+                {% for materia in materias %}
+                    <li>{{ materia.nombre }}</li>
+                {% empty %}
+                    <p>No hay materias inscritas.</p>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</div>
+{% endblock %}
+

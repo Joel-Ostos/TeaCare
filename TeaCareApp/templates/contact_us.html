@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contáctanos - TEACARE</title>
+    <link rel="stylesheet" href="styles_contact.css">
+</head>
+<body>
+    <header class="site-header">
+        <nav>
+            <ul>
+                <li><a href="index.html" class="header-link">TEACARE</a></li>
+                <li><a href="about_us.html" class="header-link">Sobre nosotros</a></li>
+                <li><a href="education.html" class="header-link">Educación en casa</a></li>
+                <li><a href="crisis.html" class="header-link">Ayuda para la crisis</a></li>
+                <li><a href="resources.html" class="header-link">Recursos educativos</a></li>
+                <li><a href="contact.html" class="header-link">Contáctanos</a></li>
+                <li><a href="login.html" class="header-link">Iniciar Sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="contact-main">
+        <section class="contact-info">
+            <h1>Contáctanos</h1>
+            <p>Si tienes alguna consulta o necesitas ayuda, no dudes en contactarnos:</p>
+            <p><strong>Número de teléfono:</strong> +57 3124982560</p>
+        </section>
+        
+        <section class="contact-form-section">
+            <form id="contact-form" action="tu-endpoint-de-procesamiento" method="POST">
+                <input type="text" id="name" name="name" placeholder="Tu nombre" required>
+                <input type="email" id="email" name="email" placeholder="Tu correo electrónico" required>
+                <textarea id="message" name="message" placeholder="Tu mensaje" required></textarea>
+                <button type="submit">Enviar Mensaje</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Tu pie de página aquí -->
+    </footer>
+</body>
+</html>
+
